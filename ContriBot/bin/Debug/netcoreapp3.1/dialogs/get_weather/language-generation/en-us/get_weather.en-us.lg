@@ -1,0 +1,23 @@
+[import](common.lg)
+
+# SendActivity_tmGLqy()
+[Activity
+    Text = ${SendActivity_tmGLqy_text()}
+]
+
+# SendActivity_tmGLqy_text()
+- Let's check the weather.
+# TextInput_Prompt_DkDgNQ()
+[Activity
+    Text = ${TextInput_Prompt_DkDgNQ_text()}
+]
+
+# TextInput_Prompt_DkDgNQ_text()
+- What's your postal code?
+# SendActivity_FAPT8Y()
+[Activity
+    Text = ${SendActivity_FAPT8Y_text()}
+]
+
+# SendActivity_FAPT8Y_text()
+- The weather is ${dialog.fahrenheit}F or ${dialog.celsius}C and ${dialog.weather}.

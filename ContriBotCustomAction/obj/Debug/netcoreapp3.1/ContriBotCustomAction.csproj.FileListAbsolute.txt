@@ -1,0 +1,10 @@
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\bin\Debug\netcoreapp3.1\ContriBotCustomAction.deps.json
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\bin\Debug\netcoreapp3.1\ContriBotCustomAction.dll
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\bin\Debug\netcoreapp3.1\ContriBotCustomAction.pdb
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.csproj.AssemblyReference.cache
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.GeneratedMSBuildEditorConfig.editorconfig
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.AssemblyInfoInputs.cache
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.AssemblyInfo.cs
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.csproj.CoreCompileInputs.cache
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.dll
+D:\avishkar-2022\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.pdb

@@ -1,0 +1,10 @@
+[import](common.lg)
+
+# SendActivity_Hnyfpt()
+[Activity
+    Text = ${SendActivity_Hnyfpt_text()}
+]
+
+# SendActivity_Hnyfpt_text()
+- ```Hi the following people have contributed to this bot
+\-> Divyansh Upadhyay```
