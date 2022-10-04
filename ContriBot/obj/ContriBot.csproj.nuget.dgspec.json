@@ -1,98 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\avishkar-2022\\ContriBot\\ContriBot\\ContriBot.csproj": {}
+    "/Users/Shubham/ContriBot/ContriBot/ContriBot.csproj": {}
   },
   "projects": {
-    "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj": {
+    "/Users/Shubham/ContriBot/ContriBot/ContriBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj",
-        "projectName": "ContriBotCustomAction",
-        "projectPath": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj",
-        "packagesPath": "C:\\Users\\leolo\\.nuget\\packages\\",
-        "outputPath": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\leolo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime": {
-              "target": "Package",
-              "version": "[4.14.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\avishkar-2022\\ContriBot\\ContriBot\\ContriBot.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\avishkar-2022\\ContriBot\\ContriBot\\ContriBot.csproj",
+        "projectUniqueName": "/Users/Shubham/ContriBot/ContriBot/ContriBot.csproj",
         "projectName": "ContriBot",
-        "projectPath": "D:\\avishkar-2022\\ContriBot\\ContriBot\\ContriBot.csproj",
-        "packagesPath": "C:\\Users\\leolo\\.nuget\\packages\\",
-        "outputPath": "D:\\avishkar-2022\\ContriBot\\ContriBot\\obj\\",
+        "projectPath": "/Users/Shubham/ContriBot/ContriBot/ContriBot.csproj",
+        "packagesPath": "/Users/Shubham/.nuget/packages/",
+        "outputPath": "/Users/Shubham/ContriBot/ContriBot/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "D:\\avishkar-2022\\ContriBot\\ContriBot\\NuGet.Config",
-          "C:\\Users\\leolo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Shubham/ContriBot/ContriBot/NuGet.Config",
+          "/Users/Shubham/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://botbuilder.myget.org/F/botbuilder-v4-dotnet-daily/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj": {
-                "projectPath": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj"
+              "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj": {
+                "projectPath": "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj"
               }
             }
           }
@@ -105,7 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -130,17 +65,10 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.28, 3.1.28]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -149,7 +77,63 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/3.1.423/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj",
+        "projectName": "ContriBotCustomAction",
+        "projectPath": "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj",
+        "packagesPath": "/Users/Shubham/.nuget/packages/",
+        "outputPath": "/Users/Shubham/ContriBot/ContriBotCustomAction/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Shubham/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/3.1.423/RuntimeIdentifierGraph.json"
         }
       }
     }
