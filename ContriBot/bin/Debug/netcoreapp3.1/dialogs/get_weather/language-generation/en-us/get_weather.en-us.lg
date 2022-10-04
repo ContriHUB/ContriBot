@@ -14,10 +14,31 @@
 
 # TextInput_Prompt_DkDgNQ_text()
 - What's your postal code?
-# SendActivity_FAPT8Y()
+# TextInput_UnrecognizedPrompt_DkDgNQ()
 [Activity
-    Text = ${SendActivity_FAPT8Y_text()}
+    Text = ${TextInput_UnrecognizedPrompt_DkDgNQ_text()}
 ]
 
-# SendActivity_FAPT8Y_text()
+# TextInput_UnrecognizedPrompt_DkDgNQ_text()
+- Sorry, I do not understand '${this.value}'. Please specify a 5 digit postal code in the format '12345'.
+# TextInput_InvalidPrompt_DkDgNQ()
+[Activity
+    Text = ${TextInput_InvalidPrompt_DkDgNQ_text()}
+]
+
+# TextInput_InvalidPrompt_DkDgNQ_text()
+- Sorry, '${this.value}' is not valid. I'm looking for a 5 digit number as postal code. Please specify a 5 digit postal code in the format '12345'.
+# SendActivity_3ncnvs()
+[Activity
+    Text = ${SendActivity_3ncnvs_text()}
+]
+
+# SendActivity_3ncnvs_text()
 - The weather is ${dialog.fahrenheit}F or ${dialog.celsius}C and ${dialog.weather}.
+# SendActivity_Ok3pIn()
+[Activity
+    Text = ${SendActivity_Ok3pIn_text()}
+]
+
+# SendActivity_Ok3pIn_text()
+- Something went wrong: ${dialog.api_response.content.message}.
