@@ -33,11 +33,14 @@
           "alwaysPrompt": false,
           "allowInterruptions": false,
           "prompt": "${TextInput_Prompt_DkDgNQ()}",
-          "unrecognizedPrompt": "",
-          "invalidPrompt": "",
-          "defaultValueResponse": "",
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_DkDgNQ()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_DkDgNQ()}",
           "property": "user.postalcode",
-          "outputFormat": "=trim(this.value)"
+          "outputFormat": "=trim(this.value)",
+          "validations": [
+            "length(this.value) == 5"
+          ],
+          "defaultValue": "90210"
         },
         {
           "$kind": "Microsoft.HttpRequest",
@@ -45,14 +48,77 @@
             "id": "VKcx1S"
           },
           "url": "https://api.openweathermap.org/data/2.5/weather?zip=${user.postalcode},us&appid=550e859c97ca75fbcdc8330927d2bbd7",
-          "resultProperty": "dialog.api_response"
+          "resultProperty": "dialog.api_response",
+          "method": "GET",
+          "responseType": "json"
         },
         {
-          "$kind": "Microsoft.SendActivity",
+          "$kind": "Microsoft.IfCondition",
           "$designer": {
-            "id": "FAPT8Y"
+            "id": "rhPGju"
           },
-          "activity": "${SendActivity_FAPT8Y()}"
+          "condition": "=dialog.api_response.statusCode == 200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "DOXtvF"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.weather",
+                  "value": "=dialog.api_response.content.weather[0].description"
+                },
+                {
+                  "property": "dialog.icon",
+                  "value": "=dialog.api_response.content.weather[0].icon"
+                },
+                {
+                  "property": "dialog.city",
+                  "value": "=dialog.api_response.content.name"
+                },
+                {
+                  "property": "dialog.country",
+                  "value": "=dialog.api_response.content.sys.country"
+                },
+                {
+                  "property": "dialog.kelvin",
+                  "value": "=dialog.api_response.content.main.temp"
+                },
+                {
+                  "property": "dialog.celsius",
+                  "value": "=round(dialog.kelvin-273.15)"
+                },
+                {
+                  "property": "dialog.fahrenheit",
+                  "value": "=round((dialog.celsius * 9/5) + 32)"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "3ncnvs"
+              },
+              "activity": "${SendActivity_3ncnvs()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "Ok3pIn"
+              },
+              "activity": "${SendActivity_Ok3pIn()}"
+            },
+            {
+              "$kind": "Microsoft.DeleteProperty",
+              "$designer": {
+                "id": "G6UIWx"
+              },
+              "property": "user.postalcode"
+            }
+          ]
         }
       ]
     }
