@@ -21,3 +21,17 @@
 
 # SendActivity_FAPT8Y_text()
 - The weather is ${dialog.fahrenheit}F or ${dialog.celsius}C and ${dialog.weather}.
+# TextInput_UnrecognizedPrompt_DkDgNQ()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_DkDgNQ_text()}
+]
+
+# TextInput_UnrecognizedPrompt_DkDgNQ_text()
+- Sorry, I do not understand '${this.value}'. Please specify a 5 digit postal code in the format 12345.
+# TextInput_InvalidPrompt_DkDgNQ()
+[Activity
+    Text = ${TextInput_InvalidPrompt_DkDgNQ_text()}
+]
+
+# TextInput_InvalidPrompt_DkDgNQ_text()
+- Sorry, '${this.value}' is not valid. I'm looking for a 5 digit number as postal code. Please specify a 5 digit postal code in the format 12345.

@@ -1,32 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj": {}
+    "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj": {}
   },
   "projects": {
-    "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj": {
+    "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj",
+        "projectUniqueName": "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj",
         "projectName": "ContriBotCustomAction",
-        "projectPath": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\ContriBotCustomAction.csproj",
-        "packagesPath": "C:\\Users\\leolo\\.nuget\\packages\\",
-        "outputPath": "D:\\avishkar-2022\\ContriBot\\ContriBotCustomAction\\obj\\",
+        "projectPath": "/Users/Shubham/ContriBot/ContriBotCustomAction/ContriBotCustomAction.csproj",
+        "packagesPath": "/Users/Shubham/.nuget/packages/",
+        "outputPath": "/Users/Shubham/ContriBot/ContriBotCustomAction/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leolo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Shubham/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime": {
               "target": "Package",
@@ -51,8 +47,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/3.1.423/RuntimeIdentifierGraph.json"
         }
       }
     }
