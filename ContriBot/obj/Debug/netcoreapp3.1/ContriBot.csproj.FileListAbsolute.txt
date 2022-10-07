@@ -292,3 +292,12 @@ D:/avishkar-2022/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/generated/interrupt
 /Users/Shubham/ContriBot/ContriBot/obj/Debug/netcoreapp3.1/ContriBot.dll
 /Users/Shubham/ContriBot/ContriBot/obj/Debug/netcoreapp3.1/ContriBot.pdb
 /Users/Shubham/ContriBot/ContriBot/obj/Debug/netcoreapp3.1/ContriBot.genruntimeconfig.cache
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/get_whoami.dialog
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/recognizers/get_whoami.en-us.lu.dialog
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/recognizers/get_whoami.lu.dialog
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/recognizers/get_whoami.lu.qna.dialog
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/language-generation/en-us/get_whoami.en-us.lg
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/language-understanding/en-us/get_whoami.en-us.lu
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/generated/interruption/get_whoami.en-us.lu
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/dialogs/get_whoami/knowledge-base/en-us/get_whoami.en-us.qna
+/Users/Shubham/ContriBot/ContriBot/bin/Debug/netcoreapp3.1/generated/interruption/get_whoami.en-us.qna

@@ -106,6 +106,24 @@
           "dialog": "get_contributors"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "B0xxBt",
+        "name": "whoami"
+      },
+      "intent": "whoami",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "lySHXS"
+          },
+          "activityProcessed": true,
+          "dialog": "get_whoami"
+        }
+      ]
     }
   ],
   "generator": "ContriBot.lg",
@@ -120,6 +138,10 @@
       {
         "intent": "Contributors",
         "pattern": "Contributors"
+      },
+      {
+        "intent": "whoami",
+        "pattern": "whoami"
       }
     ]
   }
