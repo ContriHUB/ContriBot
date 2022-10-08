@@ -33,10 +33,14 @@
           "alwaysPrompt": false,
           "allowInterruptions": false,
           "prompt": "${TextInput_Prompt_DkDgNQ()}",
-          "unrecognizedPrompt": "",
-          "invalidPrompt": "",
+          "invalidPrompt": "${TextInput_InvalidPrompt_DkDgNQ()}",
           "property": "user.postalcode",
-          "outputFormat": "=trim(this.value)"
+          "outputFormat": "=trim(this.value)",
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_DkDgNQ()}",
+          "validations": [
+            "length(this.value) == 5"
+          ],
+          "defaultValue": "90210"
         },
         {
           "$kind": "Microsoft.HttpRequest",
