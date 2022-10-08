@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_cVIAtT()
+[Activity
+    Text = ${SendActivity_cVIAtT_text()}
+]
+
+# SendActivity_cVIAtT_text()
+- Let's check who are you
+# SendActivity_TuvKQc()
+[Activity
+    Text = ${SendActivity_TuvKQc_text()}
+]
+
+# SendActivity_TuvKQc_text()
+- Hello ${user.name}. It's great connecting with you.

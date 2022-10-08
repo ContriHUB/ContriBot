@@ -1,0 +1,51 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Tf079k",
+    "name": "get_whoami",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "JYAzt7"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "cVIAtT"
+          },
+          "activity": "${SendActivity_cVIAtT()}"
+        },
+        {
+          "$kind": "Microsoft.SetProperties",
+          "$designer": {
+            "id": "50b5Dr"
+          },
+          "assignments": [
+            {
+              "property": "user.name",
+              "value": "=turn.activity.from.name"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "TuvKQc"
+          },
+          "activity": "${SendActivity_TuvKQc()}"
+        }
+      ]
+    }
+  ],
+  "generator": "get_whoami.lg",
+  "recognizer": "get_whoami.lu.qna",
+  "id": "get_whoami"
+}
