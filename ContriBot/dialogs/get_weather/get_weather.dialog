@@ -85,6 +85,26 @@
             {
               "property": "dialog.fahrenheit",
               "value": "=round((dialog.celsius * 9/5) + 32)"
+            },
+            {
+              "property": "dialog.min",
+              "value": "=dialog.api_response.content.main.temp_min"
+            },
+            {
+              "property": "dialog.max",
+              "value": "=dialog.api_response.content.main.temp_max"
+            },
+            {
+              "property": "dialog.kelvinMin",
+              "value": "=round(((dialog.min-273.15)* 9/5) + 32)"
+            },
+            {
+              "property": "dialog.kelvinMax",
+              "value": "=round(((dialog.max-273.15)* 9/5) + 32)"
+            },
+            {
+              "property": "dialog.date",
+              "value": "=dialog.api_response.content.dt"
             }
           ]
         },
