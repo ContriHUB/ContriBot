@@ -14,13 +14,6 @@
 
 # TextInput_Prompt_DkDgNQ_text()
 - What's your postal code?
-# SendActivity_FAPT8Y()
-[Activity
-    Text = ${SendActivity_FAPT8Y_text()}
-]
-
-# SendActivity_FAPT8Y_text()
-- The weather is ${dialog.fahrenheit}F or ${dialog.celsius}C and ${dialog.weather}.
 # TextInput_UnrecognizedPrompt_DkDgNQ()
 [Activity
     Text = ${TextInput_UnrecognizedPrompt_DkDgNQ_text()}
@@ -35,3 +28,100 @@
 
 # TextInput_InvalidPrompt_DkDgNQ_text()
 - Sorry, '${this.value}' is not valid. I'm looking for a 5 digit number as postal code. Please specify a 5 digit postal code in the format 12345.
+# SendActivity_FAPT8Y()
+[Activity
+    Attachments = ${json(SendActivity_FAPT8Y_attachment_ralEQk())}
+]
+
+# SendActivity_FAPT8Y_attachment_ralEQk()
+> To learn more Adaptive Cards format, read the documentation at
+> https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
+- ```{
+"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+"version": "1.2",
+"type": "AdaptiveCard",
+"body": [
+        {
+        "type": "TextBlock",
+        "text": "${dialog.city}, ${dialog.country}",
+        "size": "Large",
+        "isSubtle": true,
+        "wrap": true
+        },
+        {
+        "type": "TextBlock",
+        "text": "{{DATE(${formatEpoch(dialog.date, 'yyyy-MM-ddTHH:mm:ssZ')}, SHORT)}} {{TIME(${formatEpoch(dialog.date, 'yyyy-MM-ddTHH:mm:ssZ')})}}",
+        "spacing": "None",
+        "wrap": true
+        },
+        {
+        "type": "TextBlock",
+        "text": "${dialog.weather}",
+        "size": "medium",
+        "isSubtle": true,
+        "wrap": true
+        },
+        {
+        "type": "ColumnSet",
+        "columns": [
+            {
+            "type": "Column",
+            "width": "auto",
+            "items": [
+                    {
+                    "type": "Image",
+                    "url": "http://openweathermap.org/img/wn/${dialog.icon}@4x.png",
+                    "size": "Large",
+                    "altText": "Weather icon"
+                    }
+                ]
+            },
+            {
+            "type": "Column",
+            "width": "auto",
+            "items": [
+                    {
+                    "type": "TextBlock",
+                    "text": "${dialog.fahrenheit}",
+                    "size": "ExtraLarge",
+                    "spacing": "None",
+                    "wrap": true
+                    }
+                ]
+            },
+            {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+                    {
+                    "type": "TextBlock",
+                    "text": "°F",
+                    "weight": "Bolder",
+                    "spacing": "Small",
+                    "wrap": true
+                    }
+                ]
+            },
+            {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+                    {
+                    "type": "TextBlock",
+                    "text": "Hi ${dialog.kelvinMax}°F",
+                    "horizontalAlignment": "Left",
+                    "wrap": true
+                    },
+                    {
+                    "type": "TextBlock",
+                    "text": "Lo ${dialog.kelvinMin}°F",
+                    "horizontalAlignment": "Left",
+                    "spacing": "None",
+                    "wrap": true
+                    }
+                ]
+            }
+        ]
+        }
+    ]
+}```

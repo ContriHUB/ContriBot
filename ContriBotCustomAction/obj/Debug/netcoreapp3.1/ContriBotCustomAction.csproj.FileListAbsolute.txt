@@ -17,3 +17,13 @@ D:/avishkar-2022/ContriBot/ContriBotCustomAction/obj/Debug/netcoreapp3.1/ContriB
 /Users/Shubham/ContriBot/ContriBotCustomAction/obj/Debug/netcoreapp3.1/ContriBotCustomAction.csproj.CoreCompileInputs.cache
 /Users/Shubham/ContriBot/ContriBotCustomAction/obj/Debug/netcoreapp3.1/ContriBotCustomAction.dll
 /Users/Shubham/ContriBot/ContriBotCustomAction/obj/Debug/netcoreapp3.1/ContriBotCustomAction.pdb
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\bin\Debug\netcoreapp3.1\ContriBotCustomAction.deps.json
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\bin\Debug\netcoreapp3.1\ContriBotCustomAction.dll
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\bin\Debug\netcoreapp3.1\ContriBotCustomAction.pdb
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.csproj.AssemblyReference.cache
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.AssemblyInfoInputs.cache
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.AssemblyInfo.cs
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.csproj.CoreCompileInputs.cache
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.dll
+C:\Users\Acer\OneDrive\Desktop\ContriBot\ContriBotCustomAction\obj\Debug\netcoreapp3.1\ContriBotCustomAction.pdb
