@@ -32,6 +32,7 @@ namespace ContriBot.Controllers
             result.StatusCode = (int)HttpStatusCode.OK;
             result.ContentType = "text/html";
             result.Content = "<html> Hi I sent the message to the users </html>";
+            //will add json response 
 
             return result;
 
