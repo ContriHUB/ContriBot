@@ -105,15 +105,162 @@
             {
               "property": "dialog.date",
               "value": "=dialog.api_response.content.dt"
+            },
+            {
+              "property": "dialog.status_code",
+              "value": "=dialog.api_response.content.cod"
             }
           ]
         },
         {
-          "$kind": "Microsoft.SendActivity",
+          "$kind": "Microsoft.SwitchCondition",
           "$designer": {
-            "id": "FAPT8Y"
+            "id": "e7AA5U"
           },
-          "activity": "${SendActivity_FAPT8Y()}"
+          "condition": "dialog.status_code",
+          "default": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "hwCu7A"
+              },
+              "activity": "${SendActivity_hwCu7A()}"
+            }
+          ],
+          "cases": [
+            {
+              "value": "100",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "LbdAau"
+                  },
+                  "activity": "${SendActivity_LbdAau()}"
+                }
+              ]
+            },
+            {
+              "value": "200",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "2MpNNC"
+                  },
+                  "activity": "${SendActivity_2MpNNC()}"
+                }
+              ]
+            },
+            {
+              "value": "302",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "VQ3mSM"
+                  },
+                  "activity": "${SendActivity_VQ3mSM()}"
+                }
+              ]
+            },
+            {
+              "value": "400",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "t21szC"
+                  },
+                  "activity": "${SendActivity_t21szC()}"
+                }
+              ]
+            },
+            {
+              "value": "401",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "Jq55Gb"
+                  },
+                  "activity": "${SendActivity_Jq55Gb()}"
+                }
+              ]
+            },
+            {
+              "value": "403",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "vO6BLd"
+                  },
+                  "activity": "${SendActivity_vO6BLd()}"
+                }
+              ]
+            },
+            {
+              "value": "404",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "4nHfga"
+                  },
+                  "activity": "${SendActivity_4nHfga()}"
+                }
+              ]
+            },
+            {
+              "value": "408",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "20i5Ri"
+                  },
+                  "activity": "${SendActivity_20i5Ri()}"
+                }
+              ]
+            },
+            {
+              "value": "444",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "A9sRD3"
+                  },
+                  "activity": "${SendActivity_A9sRD3()}"
+                }
+              ]
+            },
+            {
+              "value": "500",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "3pkcJJ"
+                  },
+                  "activity": "${SendActivity_3pkcJJ()}"
+                }
+              ]
+            },
+            {
+              "value": "503",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "hlstPw"
+                  },
+                  "activity": "${SendActivity_hlstPw()}"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

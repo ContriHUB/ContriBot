@@ -28,12 +28,27 @@
 
 # TextInput_InvalidPrompt_DkDgNQ_text()
 - Sorry, '${this.value}' is not valid. I'm looking for a 5 digit number as postal code. Please specify a 5 digit postal code in the format 12345.
-# SendActivity_FAPT8Y()
+# SendActivity_hwCu7A()
 [Activity
-    Attachments = ${json(SendActivity_FAPT8Y_attachment_ralEQk())}
+    Text = ${SendActivity_hwCu7A_text()}
 ]
 
-# SendActivity_FAPT8Y_attachment_ralEQk()
+# SendActivity_hwCu7A_text()
+- Sorry for the trouble, ran into an unidentified error. -_-
+# SendActivity_4nHfga()
+[Activity
+    Text = ${SendActivity_4nHfga_text()}
+]
+
+# SendActivity_4nHfga_text()
+- ```The given city with postal code ${user.postalcode} is not found.
+Status Code: 404 (Not Found)```
+# SendActivity_2MpNNC()
+[Activity
+    Attachments = ${json(SendActivity_2MpNNC_attachment_50dGI1())}
+]
+
+# SendActivity_2MpNNC_attachment_50dGI1()
 > To learn more Adaptive Cards format, read the documentation at
 > https://docs.microsoft.com/en-us/adaptive-cards/getting-started/bots
 - ```{
@@ -125,3 +140,75 @@
         }
     ]
 }```
+# SendActivity_LbdAau()
+[Activity
+    Text = ${SendActivity_LbdAau_text()}
+]
+
+# SendActivity_LbdAau_text()
+- ```The initial part of the request has been received and has not yet been rejected by the server. 
+Status Code: 100 (Continue)```
+# SendActivity_VQ3mSM()
+[Activity
+    Text = ${SendActivity_VQ3mSM_text()}
+]
+
+# SendActivity_VQ3mSM_text()
+- ```The URL of the requested resource has been changed temporarily.
+Status Code: 302 (Found)```
+# SendActivity_t21szC()
+[Activity
+    Text = ${SendActivity_t21szC_text()}
+]
+
+# SendActivity_t21szC_text()
+- ```The request could not be understood by the server due to incorrect syntax.
+Status Code: 400 (Bad Request)```
+# SendActivity_Jq55Gb()
+[Activity
+    Text = ${SendActivity_Jq55Gb_text()}
+]
+
+# SendActivity_Jq55Gb_text()
+- ```The request requires user authentication information.
+Status Code: 401 (Unauthorized)```
+# SendActivity_vO6BLd()
+[Activity
+    Text = ${SendActivity_vO6BLd_text()}
+]
+
+# SendActivity_vO6BLd_text()
+- ```Unauthorized request. You do not have access rights to the content.
+Status Code: 403(Forbidden)```
+# SendActivity_20i5Ri()
+[Activity
+    Text = ${SendActivity_20i5Ri_text()}
+]
+
+# SendActivity_20i5Ri_text()
+- ```Request Timeout
+Status Code: 408```
+# SendActivity_A9sRD3()
+[Activity
+    Text = ${SendActivity_A9sRD3_text()}
+]
+
+# SendActivity_A9sRD3_text()
+- ```The Nginx server returns no information
+Status Code: 444(No Response (Nginx))```
+# SendActivity_3pkcJJ()
+[Activity
+    Text = ${SendActivity_3pkcJJ_text()}
+]
+
+# SendActivity_3pkcJJ_text()
+- ```The server encountered an unexpected condition that prevented it from fulfilling the request.
+Status Code: 500 (Internal Server Error)```
+# SendActivity_hlstPw()
+[Activity
+    Text = ${SendActivity_hlstPw_text()}
+]
+
+# SendActivity_hlstPw_text()
+- ```The server is not ready to handle the request.
+Status Code: 503 (Service Unavailable)```
