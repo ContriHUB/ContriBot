@@ -4,6 +4,8 @@ using Microsoft.Bot.Builder;
 using System.Net;
 using System.Threading.Tasks;
 using System.Threading;
+using System;
+using System.Collections.Concurrent;
 
 namespace ContriBot.Controllers
 {
@@ -12,9 +14,12 @@ namespace ContriBot.Controllers
     public class NotifyController : ControllerBase
     {
         private IBotFrameworkHttpAdapter _externAdapter;
-        public NotifyController(IBotFrameworkHttpAdapter adapter)
+
+        private readonly ConcurrentDictionary<string, ConversationReference> _conversationReferences;
+        public NotifyController(IBotFrameworkHttpAdapter adapter, IConfiguration configuration, ConcurrentDictionary<string, ConversationReference> conversationReferences)
         {
             _externAdapter = adapter;
+            _conversationReferences = conversationReferences;
         }
 
         public async Task<IActionResult> Get()

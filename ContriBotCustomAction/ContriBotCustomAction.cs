@@ -26,6 +26,13 @@ namespace ContriBotCustomAction
         public static readonly ConcurrentDictionary<string,ConversationReference> conDict= new 
             ConcurrentDictionary<string,ConversationReference>();
 
+        private readonly ConcurrentDictionary<string, ConversationReference> _conversationReferences;
+        public ContriBotCustomAction(ConcurrentDictionary<string, ConversationReference> conversationReferences)
+        {
+            _conversationReferences = conversationReferences;
+        }
+
+
         public override Task<DialogTurnResult> BeginDialogAsync(DialogContext dc, object options = null,
             CancellationToken cancellationToken = new CancellationToken())
         {
